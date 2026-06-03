@@ -4,7 +4,7 @@ LOG="internet_log.txt"
 
 while true
 do
-    DATA=$(date "+%Y-%m-%d %H:%M:%S")
+    DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
     RESULT=$(speedtest --accept-license --accept-gdpr --format=json)
 
@@ -12,7 +12,7 @@ do
     UPLOAD=$(echo $RESULT | jq '.upload.bandwidth * 8 / 1000000')
     PING=$(echo $RESULT | jq '.ping.latency')
 
-    echo "[$DATA]" >> $LOG
+    echo "[$DATE]" >> $LOG
     echo "Download: ${DOWNLOAD} Mbps" >> $LOG
     echo "Upload: ${UPLOAD} Mbps" >> $LOG
     echo "Ping: ${PING} ms" >> $LOG
