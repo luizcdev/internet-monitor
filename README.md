@@ -1,6 +1,6 @@
 # Internet Monitor
 
-A simple internet connection monitoring tool for Raspberry Pi using the Ookla Speedtest CLI.
+A simple internet connection monitoring tool using the Ookla Speedtest CLI.
 
 The project periodically measures download speed, upload speed, and latency, storing the results in a log file. It also includes a reporting script that generates statistics about your connection performance over time.
 
