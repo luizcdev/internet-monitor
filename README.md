@@ -192,20 +192,6 @@ Stop monitoring:
 ```bash
 pkill -f monitor.sh
 ```
-
----
-
-# Git Ignore
-
-Recommended `.gitignore`:
-
-```gitignore
-internet_log.txt
-monitor.log
-```
-
-This prevents large log files from being committed to the repository.
-
 ---
 
 # License
